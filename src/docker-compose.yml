@@ -1,0 +1,29 @@
+﻿services:
+  api:
+    build: .
+    container_name: habitum-api
+    ports:
+      - "5100:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT}
+      ConnectionStrings__HabitumContext: ${ConnectionStrings__HabitumContext}
+      JwtSettings__SecretKey: ${JwtSettings__SecretKey}
+      JwtSettings__Issuer: ${JwtSettings__Issuer}
+      JwtSettings__Audience: ${JwtSettings__Audience}
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: habitum-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: habitum
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
