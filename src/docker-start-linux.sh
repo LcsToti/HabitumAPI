@@ -21,4 +21,3 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "✅ HabitumApi iniciado com sucesso!"
-read -p "Pressione Enter para sair..."

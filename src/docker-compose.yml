@@ -11,7 +11,8 @@
       JwtSettings__Issuer: ${JwtSettings__Issuer}
       JwtSettings__Audience: ${JwtSettings__Audience}
     depends_on:
-      - db
+      migrator:
+        condition: service_completed_successfully
 
   db:
     image: mysql:8.0
@@ -24,6 +25,23 @@
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+      
+  migrator:
+    build:
+      context: .
+      target: build
+    container_name: habitum-migrator
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ConnectionStrings__HabitumContext: ${ConnectionStrings__HabitumContext}
+    command: ["dotnet", "ef", "database", "update"]
+    
 volumes:
   mysql_data:

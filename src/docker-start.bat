@@ -21,4 +21,3 @@ if errorlevel 1 (
 
 echo ✅ HabitumApi iniciado com sucesso!
 popd
-pause
