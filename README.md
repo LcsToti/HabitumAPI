@@ -1,6 +1,6 @@
 # 🔁 Habitum API
 
-<img width="2856" height="900" alt="image" src="https://github.com/user-attachments/assets/97dc1897-b43d-4ea0-9724-45ab1b2c5539" />
+<img width="2856" height="900" alt="508380376-97dc1897-b43d-4ea0-9724-45ab1b2c5539" src="https://github.com/user-attachments/assets/85026ff5-f4a1-486f-91bd-b3798179a759" />
 
 `Jan/25 - Jun/25`
 
@@ -18,6 +18,14 @@ Para ver a aplicação móvel, clique aqui
 📋 [Tutorial de Configuração do Projeto Para Uso Local](https://github.com/LcsToti/Habitum/edit/main/README.md#-instru%C3%A7%C3%B5es-de-utiliza%C3%A7%C3%A3o)
 
 # 🖼️ Galeria
+
+<img width="1468" height="824" alt="Captura de tela 2025-10-31 180328" src="https://github.com/user-attachments/assets/dc46392a-0227-465c-8ea7-7f55b7a52de6" />
+
+<img width="1445" height="775" alt="Captura de tela 2025-10-31 180331" src="https://github.com/user-attachments/assets/6225a7cc-aadd-4a65-8ee6-2c8ac94de308" />
+
+<img width="1451" height="825" alt="Captura de tela 2025-10-31 180337" src="https://github.com/user-attachments/assets/d5c8a199-acbe-4322-9f89-92a8515f0676" />
+
+<img width="1446" height="671" alt="Captura de tela 2025-10-31 180343" src="https://github.com/user-attachments/assets/9347f172-f8e0-42ea-bdde-5bd58ff409a0" />
 
 ## 📋 Instruções de utilização
 
